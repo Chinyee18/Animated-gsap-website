@@ -1,0 +1,36 @@
+// Abstract
+@import "./abstract/mixins";
+
+// Base
+@import "./base/global";
+
+// Layouts
+@import "./layouts/header";
+@import "./layouts/footer";
+
+//components
+@import "./components/hexes";
+@import "./components/arrow";
+@import "./components/arrowDown";
+@import "./components/scrollToTop";
+@import "./components/logo";
+@import "./components/loader";
+
+// Pages
+@import "./pages/home";
+@import "./pages/content";
+@import "./pages/tao";
+@import "./pages/directCommunication";
+@import "./pages/dataAnalytics";
+@import "./pages/creativeAi";
+@import "./pages/taoAi";
+
+@import "./pages/contact";
+
+
+
+
+
+
+
+

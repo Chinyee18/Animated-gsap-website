@@ -1,0 +1,44 @@
+
+@use "../abstract/mixins" as mixins;
+
+.ca-container{
+    margin: 10rem 0 5rem 0;
+    .ca-img-border{
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 1rem 0;
+        // max-width: 520px;
+        img{
+            // margin: -20px;
+            bottom:0;
+            width: 105%;
+        }
+    }
+    .content{
+        margin-left: 5%;
+        margin-bottom: 5%;
+        margin-top: 9%;
+        p{
+            max-width: 400px;
+        }
+        @include mixins.responsive(xxs) {
+            margin-left: 0;
+        }
+    
+        @include mixins.responsive(xs) {
+            margin-left: 0;
+        }
+    
+        @include mixins.responsive(sm) {
+            margin-left: 0;
+        }
+    
+        @include mixins.responsive(md) {
+            margin-left: 0;
+        }
+    
+        @include mixins.responsive(lg) {
+            margin-left: 5%;
+        }
+    }
+}

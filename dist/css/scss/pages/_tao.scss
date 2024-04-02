@@ -1,0 +1,78 @@
+
+@use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
+
+.tao{
+    margin-top: 5rem;
+    
+    h1{
+        color: white;
+        font-weight: 700;
+        font-size: 4rem;
+        @include mixins.responsive(xxs) {
+            font-size: 3rem;
+        }
+    
+        @include mixins.responsive(xs) {
+            font-size: 3.3rem;
+        }
+    
+        @include mixins.responsive(sm) {
+            font-size: 4rem;
+        }
+    
+        @include mixins.responsive(md) {
+            font-size: 4rem;
+        }
+    
+        @include mixins.responsive(lg) {
+            font-size: 4rem;
+        }
+    }
+    .highlight{
+        color:  func.theme-colors("primary-light");
+    }
+    .box{
+        // background: rgba(241, 235, 247, 0.1);
+        // border-radius: 20px;
+        // border: 1px solid rgb(255, 255, 255, 0.25);
+        // margin: 1.5rem 0;
+        // padding: 1rem;
+        border-bottom: 1px solid rgb(255, 255, 255, 0.25);
+        padding: 1.5rem;
+        b{
+            color:  func.theme-colors("primary"); 
+            font-size: 4rem;
+            margin-left: 2rem;
+        }
+        p{
+            margin-bottom: 0;
+            padding: 0 3rem 0 0;
+        }
+        @include mixins.responsive(xxs) {
+            p{padding: 0 0.5rem 0 0.2rem;}
+            b{font-size: 3.2rem;margin-left: 1rem;}
+        }
+    
+        @include mixins.responsive(xs) {
+            p{padding: 0 0.5rem 0 0.2rem;}
+            b{font-size: 3.2rem;margin-left: 1rem;}
+        }
+    
+        @include mixins.responsive(sm) {
+            p{padding: 0 0.5rem 0 0.2rem;}
+            b{font-size: 3.2rem;margin-left: 2rem;}
+        }
+
+        @include mixins.responsive(md) {
+            p{padding: 0 3rem 0 0;}
+            b{font-size: 4rem;margin-left: 2rem;}
+        }
+        @include mixins.responsive(lg) {
+            p{padding: 0 3rem 0 0;}
+            b{font-size: 4rem;margin-left: 2rem;}
+        }
+        
+    }
+    
+}

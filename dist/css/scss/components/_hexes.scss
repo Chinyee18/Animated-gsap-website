@@ -1,0 +1,56 @@
+@use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
+
+.hex-container {
+  position: relative;
+  transition:all .3s ease-out;
+  height: 500px;
+  perspective: 700px;
+  z-index: 10;
+}
+
+.honeycomb {
+    display: block;
+    text-align: center;
+    .column {
+      display: block;
+      float: left;
+      &:nth-child(odd) {
+        margin-top: 36px;
+      }
+      &:nth-child(4n+1) {
+        margin-top: 108px;
+      }
+    }
+    
+    .hex {
+      display: block;
+      position: relative;
+      float: left;
+      cursor: pointer;
+      text-decoration: none;
+      transition:all .3s ease-out;
+      
+      .wrapper {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        .color-1 {
+          &:before {
+            content: "\2B22";
+            display:block;
+          }
+        }
+      }
+
+      &:hover {
+        transition-duration : 100ms;
+      }
+     
+    }
+}
+
+.hidden {
+  display: none;
+}

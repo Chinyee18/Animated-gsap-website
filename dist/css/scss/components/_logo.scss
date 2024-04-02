@@ -1,0 +1,12 @@
+@use "../abstract/mixins" as mixins;
+
+.logo{
+    z-index: 12;
+    img{
+        height: 42px;
+
+        @include mixins.responsive(xxs) {
+            height: 25px;
+        }
+    }
+}

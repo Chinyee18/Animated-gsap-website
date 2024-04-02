@@ -1,0 +1,6 @@
+@use "../abstract/variable" as var;
+
+.footer{
+    background-color: #1B191C;
+    padding: 5rem var.$overall-padding;
+}

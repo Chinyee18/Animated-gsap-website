@@ -1,0 +1,132 @@
+@use "../abstract/mixins" as mixins;
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as func;
+
+.homepage{
+    // top:0;
+    // position: sticky; 
+    height: 100vh;
+    overflow: hidden;  
+    background: radial-gradient(ellipse at right top, #1B2735 0%, #07020C 70%);
+
+    &--title {
+        // font-size: 5rem;
+        line-height: 1.2;
+        width: 45%;
+        font-weight: 400;
+        position: absolute;
+        bottom: 10%;
+        padding:0 var.$overall-padding;
+        z-index: 100;
+        color: #fff;
+        .logo{
+            margin: 0 0 3rem 1%;
+        }
+
+        @include mixins.responsive(xxs) {
+            width: 88%;
+            
+        }
+    
+        @include mixins.responsive(xs) {
+            width: 85%;
+            
+        }
+    
+        @include mixins.responsive(sm) {
+            width: 85%;
+            
+        }
+
+        @include mixins.responsive(md) {
+            width: 65%;
+            
+        }
+    
+        @include mixins.responsive(lg) {
+            width: 65%;
+            
+        }
+    }
+
+    .hex-container{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        .honeycomb {
+            position: absolute;
+            margin-left: -30%;
+            padding-left: 18px;
+            width: 150%;
+            height: 5%;
+            transform: rotateX(40deg) rotateY(200deg);
+            transform-style: preserve-3d;
+            transform-origin: center, 65%;
+            z-index: 5;
+            
+            .column {
+              width: 62px;
+              transform-style: preserve-3d;
+              &:nth-child(odd) {
+                margin-top: 36px;
+              }
+              &:nth-child(4n+1) {
+                margin-top: 108px;
+              }
+            }
+            
+            .hex {
+              height: 72px;
+              width: 62px;
+              margin: 0;
+              cursor: pointer;
+              transform-style: preserve-3d;
+              opacity: 0.5;
+              
+              .wrapper {
+                height: 100px;
+                width: 100px;
+                .color-1 {
+                  &:before {
+                    color: rgba(102, 26, 238);
+                    font-size:95px;
+                    -webkit-transform: rotate(-30deg);
+                    -moz-transform: rotate(-30deg);
+                    -o-transform: rotate(-30deg);
+                    transform: rotate(-30deg);
+                    animation: textColor 10s ease infinite;
+                      
+                    @keyframes textColor {
+                      0% {
+                        color:func.theme-colors("primary");
+                      }
+                      20% {
+                        color:func.theme-colors("primary");
+                      }
+                      40% {
+                        color: #4a83ec;
+                      }
+                      60% {
+                        color: #8bcad2;
+                      }
+                      80% {
+                        color: #6c54d6;
+                      }
+                      100% {
+                        color: func.theme-colors("primary");
+                      }
+                    }
+                  }
+                }
+              }
+        
+              &:hover {
+                opacity: 1;
+                transform: translateZ(-20px);
+              }
+             
+            }
+        }
+    }
+}

@@ -1,0 +1,81 @@
+@use "../abstract/variable" as var;
+@use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
+
+.tao-content {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 0 var.$overall-padding;
+    //transform: scale(0.3);
+    .line{
+        margin-top: 5rem;
+        @include mixins.responsive(xxs) {
+            margin-top: 9rem;
+        }
+    
+        @include mixins.responsive(xs) {
+            margin-top: 9rem;
+        }
+        @include mixins.responsive(sm) {
+            margin-top: 9rem;
+        }
+        @include mixins.responsive(md) {
+            margin-top: 5rem;
+        }
+        @include mixins.responsive(lg) {
+            margin-top: 5rem;
+        }
+    }
+    .card{
+        background: rgba(241, 235, 247, 0.1);
+        border-radius: 20px;
+        width: 100%;
+        .card-body{
+            padding: 2.5rem;
+        }
+        img{
+            width: 90%;
+            margin: 0 5%;
+        }
+        @include mixins.responsive(xxs) {
+            border-radius: 10px;
+            .card-body{
+                padding: 1.5rem;
+            }
+        }
+    
+        @include mixins.responsive(xs) {
+            border-radius: 10px;
+            .card-body{
+                padding: 1.5rem;
+            }
+        }
+    
+        @include mixins.responsive(sm) {
+            border-radius: 10px;
+            .card-body{
+                padding: 1.5rem;
+            }
+        }
+
+        @include mixins.responsive(md) {
+            border-radius: 10px;
+            .card-body{
+                padding: 1.5rem;
+            }
+        }
+        @include mixins.responsive(lg) {
+            border-radius: 10px;
+            .card-body{
+                padding: 1.5rem;
+            }
+        }
+        @include mixins.responsive(xlg) {
+            border-radius: 20px;
+            .card-body{
+                padding: 2.5rem;
+            }
+        }
+    }
+}

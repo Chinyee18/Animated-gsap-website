@@ -1,0 +1,47 @@
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+      @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+      @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+      @content;
+    }
+    @-o-keyframes #{$animation-name} {
+      @content;
+    }  
+    @keyframes #{$animation-name} {
+      @content;
+    }
+  }
+  
+  @mixin animation($str) {
+    -webkit-animation: #{$str};
+    -moz-animation: #{$str};
+    -ms-animation: #{$str};
+    -o-animation: #{$str};
+    animation: #{$str};      
+  }
+
+.scroll-down {
+    width:60px;
+    height:60px;
+    margin: auto;
+    .arrow {
+        margin:0 auto;
+        margin-top: 30px;
+        width: 25px;
+        height: 25px;
+        @include animation('bounce 2s infinite');
+      }
+  }
+
+  @include keyframes(bounce) {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+      40% {transform: translateY(-25px);}
+      60% {transform: translateY(-15px);}
+  }
+
+
+  

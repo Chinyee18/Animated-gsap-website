@@ -1,0 +1,336 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Digitalyst Ai</title>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link href="dist/css/scss/skin.css" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link href="vendor/bootstrap/bootstrap.min.css" rel="stylesheet" >
+
+        <!-- jquery -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <!-- GSAP -->
+        <script src="vendor/gsap/gsap.min.js"></script>
+        <script src="vendor/gsap/ScrollTrigger.min.js"></script>
+
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="dist/img/ms-icon-144x144.webp">
+        <meta name="theme-color" content="#ffffff">
+        
+    </head>
+    
+    <body>
+        <!-- ========== Start Loading ========== -->
+        <div id="loading" class="load-container">
+            <div class="loader" >
+                <div>
+                <div>
+                  <span class="one l6"></span>
+                  <span class="two l3"></span>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <span class="one l1"></span>
+                  <span class="two l4"></span>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <span class="one l5"></span>
+                  <span class="two l2"></span>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- ========== End Loading ========== -->
+        <div class="hidden" id="page">
+            <!-- ========== Start Header ========== -->
+            <header class="header">
+                <div class="logo" >
+                    <a href="#"><img src="dist/images/digitalyst_ai_logo.svg" /></a>
+                </div>
+                <div class="backdrop"></div>
+            </header>
+            <!-- ========== End Header ========== -->
+
+            <!-- ========== Start Main ========== -->
+            <main>
+                <section class="homepage">
+                    <div class="homepage--title" >
+                        <div class="logo">
+                            <img src="dist/images/digitalyst_ai_logo.svg" />
+                        </div>
+                        <div class="title">Business Growth with Intelligence</div>
+                    </div>
+                    <div id="hex-container" class="hex-container"></div>
+                </section>
+                
+                <div class="tao-content" id="tao-content">
+                    <section class="tao">
+                        <div class="row">
+                            <div class="col"></div>
+                            <div class="col-lg-10">
+                                <div class="box">
+                                    <div class="row align-items-center">
+                                        <div class="col"><b class="alphabet">T</b></div>
+                                        <div class="col-8 p-0">
+                                            <p class="desc">Target best prospects, improve conversion effectiveness and efficiency</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="row align-items-center">
+                                        <div class="col"><b class="alphabet">A</b></div>
+                                        <div class="col-8 p-0">
+                                            <p class="desc">Acquire new customers in a frictionless way while incorporating their data into your system</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box" >
+                                    <div class="row align-items-center">
+                                        <div class="col"><b class="alphabet">O</b></div>
+                                        <div class="col-8 p-0">
+                                            <p class="desc">Optimize in real-time, improve response rates and relevance targeting</p>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col"></div>
+                        </div>
+                    
+                    </section>
+                    <section class="ta-container">
+                        <div class="row">
+                            <div class="col-lg-7 mt-5 mt-lg-0">
+                                <div class="hex-title mb-4">
+                                    <p class="my-1 m-0 sub-title">Our propriety system</p>
+                                    <div class="title-2 m-0">TAO AI</div>
+                                </div>
+                                <div class="position-relative">
+                                    <img src="dist/images/gra_1.png" class="gradient gra-1"/>
+                                    <img src="dist/images/gra_2.png" class="gradient gra-2"/>
+                                    <ul id="categories" class="clr">
+                                        <a href="#da-section">
+                                            <li>
+                                                <div><p>Data Analytics</p></div>
+                                            </li>
+                                        </a>
+                                        <a href="#dc-section">
+                                            <li>
+                                                <div onclick="scrollTo('#dc-section')"><p>Direct eCommunication</p></div>
+                                            </li>
+                                        </a>
+                                        <!-- <a> -->
+                                            <li class="pusher"></li>
+                                        <!-- </a> -->
+                                        
+                                        <a href="#ca-section">
+                                            <li>
+                                                <div onclick="scrollTo()"><p>Creative AI Generation</p></div>
+                                            </li>
+                                        </a>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-4 col-lg-5 d-flex align-items-end">
+                                <p class="sub-title">Access our TAO AI system through a customized AI PROMPT to grow & capitalise your customer database</p>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- <hr class="line"> -->
+                    <section id="da-section" class="da-container">
+                        <div class="title-2">Data Analytics</div>
+                        <div class="sub-title">AI Powered Analytics</div>
+                        <div class="row align-items-start">
+                            <div class="col-lg-7 mt-3">
+                                <div class="bg-img position-relative">
+                                    <img src="dist/images/da_2.png" alt="..." class="position-absolute" id="da_2">
+                                    <img src="dist/images/da_1.png" alt="..." class="position-absolute" id="da_1">
+                                    
+                                    <img src="dist/images/da_3.png" alt="...">
+                                </div>
+                            </div>
+                            <div class="col-lg-5 mt-4">
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <div class="icon">
+                                            <img src="dist/images/audience.png" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col">
+                                        <div class="card-body">
+                                            <p class="card-text">Audience Segmentation & Persona Creation
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <div class="icon">
+                                            <img src="dist/images/sales.png" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col">
+                                        <div class="card-body">
+                                            <p class="card-text">Growth Sales Forecaster
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row align-items-center">
+                                    <div class="col-3">
+                                        <div class="icon">
+                                            <img src="dist/images/location.png" alt="...">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-7 col">
+                                        <div class="card-body">
+                                            <p class="card-text">Location targeting
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="dc-section" class="dc-container">
+                        <div class="title-2">Direct eCommunication</div>
+                        <div class="sub-title">Intelligent Integrated Platform</div>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5">
+                            <div class="col d-flex align-items-stretch">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <p class="card-text">Reach individual customers directly eMails / SMS / eSurveys / eInvites
+                                        </p>
+                                    </div>
+                                    <div class="position-relative gs--float">
+                                        <img src="dist/images/dc_1.png" id="dc_1" class="img_2 card-img-bottom position-absolute " alt="...">
+                                        <img src="dist/images/phone.png" class="card-img-bottom img_1" alt="...">
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-stretch">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <p class="card-text">Auto-generated unique QR Code for limitless contacts /applications
+                                        </p>
+                                    </div>
+                                    <div class="position-relative gs--float">
+                                        <img src="dist/images/qr_2.png" id="qr" class="img_2 card-img-bottom position-absolute" alt="...">
+                                        <img src="dist/images/qr_1.png" class="card-img-bottom img_1" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col d-flex align-items-stretch">
+                                <div class="card shadow-sm">
+                                    <div class="card-body">
+                                        <p class="card-text">Digital media activation via connectors (direct to Facebook, Instagram, X, TikTok & other ad platforms)
+                                        </p>
+                                    </div>
+                                    <div class="position-relative gs--float">
+                                        <img src="dist/images/dc_3.png" id="dc_3" class="img_2 card-img-bottom position-absolute " alt="...">
+                                        <img src="dist/images/phone.png" class="card-img-bottom img_1" alt="...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="ca-section" class="ca-container">
+                        <div class="title-2" id="gs--ca">Creative AI Generation</div>
+                        <div class="sub-title">AI Directed</div>
+                        <div class="row align-items-start mt-3">
+                            <div class="col-lg-5">
+                            <div class="ca-img-border position-relative">
+                                <img src="dist/images/ca_2.webp" alt="..." class="ca-img position-absolute" id="ca-img-2">
+                                <img src="dist/images/ca_3.webp" alt="..." class="ca-img position-absolute" id="ca-img-3">
+                                <img src="dist/images/ca_1.webp" alt="..." class="ca-img">
+                            </div>
+                            </div>
+                            <div class="col content">
+                                <!-- <div class=" title-2">Creative AI Generation</div> -->
+                                <!-- <div class="sub-title">AI Directed</div> -->
+                                <p class="mt-4" >Visual & copy creation based on product & customer appeal</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <!-- ========== End Main ========== -->
+            
+            <a href="#" >
+                <div class="scroll-to-top">
+                    <div class="arrow"></div>
+                </div>
+            </a>
+            
+            <!-- ========== Start Footer ========== -->
+            <footer class="footer">
+                <section class="contact">
+                    <div class="row align-items-start">
+                        <div class="col-lg-5 mb-5">
+                            <a href="#">
+                                <div class="logo">
+                                    <img src="dist/images/digitalyst_ai_logo.svg" alt="...">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col content">
+                            <div class="title-3">Just email us & find out more on how we can help grow your business</div>
+                            <div class="contact--text mt-4">
+                                <i class="fa fa-envelope-o"></i>
+                                <p>enquiries@digitalyst.ai</p>
+                            </div>
+                            <hr class="line"/>
+                            <div class="contact--text mb-3">
+                                <i class="fa fa-map-marker"></i>
+                                <div><p>Digitalyst AI Sdn Bhd <span class="small-text"> (202401005742)</span></p>
+                                    <p class="mt-2">
+                                        SO-31-1, Menara 1, The Strata Office, No. 3, Jalan Bangsar, KL Eco City,
+                                        59200 Kuala Lumpur, Malaysia
+                                    </p>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <hr class="line"/>
+                <div class="small-text">Copyright © 2024 digitalyst.ai - All Rights Reserved.
+                </div>
+            </footer>
+            <!-- ========== End Footer ========== -->
+        </div>
+
+        <!-- js -->
+        <script src="dist/js/scrollToSection.js"></script>
+        <script src="dist/js/scrollTrigger.js"></script>
+        <script src="dist/js/mouseOverAnimation.js"></script>
+        <script src="dist/js/hexagon.js"></script>
+        <script src="dist/js/hex-rotate.js"></script>
+        <script>
+            window.addEventListener("load", function () {
+                setTimeout(() => {
+                    document.getElementById('loading').style.display = "none";
+                    document.getElementById('page').style.display = "block";
+                }, 0); //1800
+            }, true);
+        </script>
+       
+    </body>
+</html>

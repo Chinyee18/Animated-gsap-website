@@ -1,0 +1,59 @@
+
+@use "../abstract/mixins" as mixins;
+
+.da-container{
+    margin-top: 10rem;
+    .bg-img{
+        img{
+            width: 90%;
+        }
+    }
+    .icon{
+        background: rgba(241, 235, 247, 0.5);
+        backdrop-filter: blur(20px);
+        border-radius: 15px;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        box-shadow: rgba(148, 32, 147, 0.9) -10px 15px 35px 5px ;
+        img{
+            width: 70%;
+        }
+        @include mixins.responsive(xxs) {
+            margin: 0.8rem;
+            width: 60px;
+            height: 60px;
+        }
+    
+        @include mixins.responsive(xs) {
+            margin: 0.8rem;
+            width: 60px;
+            height: 60px;
+        }
+    
+        @include mixins.responsive(sm) {
+            margin: 0.8rem;
+            width: 60px;
+            height: 60px;
+        }
+
+        @include mixins.responsive(md) {
+            margin: 0.8rem;
+            width: 60px;
+            height: 60px;
+        }
+        @include mixins.responsive(lg) {
+            margin: 0.8rem;
+            width: 60px;
+            height: 60px;
+        }
+        @include mixins.responsive(xlg) {
+            margin: 1rem;
+            width: 80px;
+            height: 80px;
+        }
+    }
+}

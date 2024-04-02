@@ -1,0 +1,26 @@
+@use "../abstract/functions" as func;
+
+.scroll-to-top {
+    width:60px;
+    height:60px;
+    border-radius:60px;
+    border: solid 1px white;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    .arrow {
+        width: 20px;
+        height: 20px;
+        transform: rotate(180deg);
+      }
+      &:hover {
+        background-color: func.theme-colors("primary");
+        border: solid 1px func.theme-colors("primary");
+      }
+  }
+  
+  

@@ -1,0 +1,18 @@
+@use "../abstract/functions" as func;
+@use "../abstract/mixins" as mixins;
+
+.contact{
+    &--text{
+        display: flex;
+        align-items:flex-start;
+        .fa{
+            color: func.theme-colors("primary");
+            margin-top: 0.2rem;
+        }
+        p{
+            margin: 0 0 0 1rem;
+            color: #fff;
+        }
+        
+    }
+}
